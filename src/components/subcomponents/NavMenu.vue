@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <main>
-    <p>Home</p>
-  </main>
+    <p>NavMenu</p>
 </template>

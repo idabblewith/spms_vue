@@ -1,4 +1,6 @@
-
+export interface IPageWrapperProps {
+    children: React.ReactNode;
+}
 
 export interface IBusinessArea {
     pk: number;
@@ -95,6 +97,45 @@ export interface ISearchTerm {
     searchTerm: string;
 }
 
-// export interface IUser {
 
-// }
+export interface ITask {
+    name: string
+}
+
+export interface IProject {
+    name: string;
+}
+
+export interface IPartnership {
+    name: string;
+}
+
+export interface ITaskandAssociationsProps {
+    tasks: ITask[];
+    projects: IProject[];
+    partnerships: IPartnership[];
+}
+
+
+// NAVIGATION BAR
+
+export interface ISubDirectory {
+    title: string;
+    link: string;
+}
+
+export interface INavigationBarProps {
+    subDirOne: ISubDirectory;
+    subDirTwo?: ISubDirectory;
+    subDirThree?: ISubDirectory;
+}
+
+export interface INavMenuProps {
+  menuName?: string;
+  cScheme?: string;
+  hoverColor?: string;
+  fColor?: string;
+  leftIcon?: JSX.Element;
+  children?: JSX.Element;
+  noChevron?: boolean;
+}

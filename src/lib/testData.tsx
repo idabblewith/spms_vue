@@ -71,7 +71,7 @@ export const testUserData = [
     },
 ]
 
-export const testCurrentUserData = [
+export const testDefaultUserData = 
     {
         pk: 6,
         username: "JPDBCA",
@@ -82,7 +82,7 @@ export const testCurrentUserData = [
         workCenter: null,
         imageLink: undefined,
     }
-]
+
 
 export const testProjectData = [
     {
@@ -126,3 +126,17 @@ export const testProjectData = [
 
 ]
 
+export const testMyTasksData = [
+    { name: "Create a converter between Chakra -> CSS -> Tailwind" },
+    { name: "Complete Udemy course on Vue3 Composition API" },
+]
+
+export const testMyProjectsData = [
+    { name: "Website Migration" },
+    { name: "Diatom Study" },
+]
+
+export const testMyPartnershipsData = [
+    { name: "Murdoch Partnership" },
+    { name: "UWA Partnership" },
+]

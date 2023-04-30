@@ -90,4 +90,36 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    /* font-family: 'Open Sans', Courier, monospace; */
+    /* font-family: 'Raleway';     */
 }
+
+html{
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;
+    font-family:system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -moz-osx-font-smoothing:grayscale;
+    touch-action:manipulation;
+}
+
+small{font-size:80%;}
+
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}
+
+:where(h1, h2, h3, h4, h5, h6){font-size:inherit;font-weight:inherit;}
+
+:where(*, *::before, *::after){border-width:0;border-style:solid;box-sizing:border-box;word-wrap:break-word;}
+
+:where(pre, code, kbd,samp){font-family:SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:1em;}
+
+:where(b, strong){font-weight:bold;}
+
+:where(sub,sup){font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+
+:where(button, input, optgroup, select, textarea){font-family:inherit;font-size:100%;line-height:1.15;margin:0;}
+
+:where(pre, code, kbd,samp){font-family:SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:1em;}
+
+:where(button, input, optgroup, select, textarea){font-family:inherit;font-size:100%;line-height:1.15;margin:0;}

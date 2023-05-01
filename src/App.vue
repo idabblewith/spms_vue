@@ -1,21 +1,20 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import FooterSection from './components/FooterSection.vue';
-import HeaderSection from './components/HeaderSection.vue';
-import PageWrapperVue from './components/PageWrapper.vue';
+import FooterSection from './components/Footer/FooterSection.vue';
+import HeaderSection from './components/Header/HeaderSection.vue';
+import PageWrapperVue from './components/Base/PageWrapper.vue';
 import myImage from "./assets/80mile.jpg";
-import {useDocumentTitle} from '@/use/useDocumentTitle';
+import { useDocumentTitle } from '@/use/useDocumentTitle';
 
 // Dynamic Title - Dependent on Route
 useDocumentTitle();
 </script>
 
 <template>
-
   <!-- Centering component for nav and content -->
   <PageWrapperVue>
     <img :src="myImage" class="w-full h-full object-cover absolute top-0 left-0 z-0" />
-    
+
     <div class="relative"> <!-- Add relative positioning to the wrapper div -->
       <!-- Navbar -->
       <HeaderSection />
@@ -30,7 +29,7 @@ useDocumentTitle();
   </PageWrapperVue>
 
   <!-- Footer positioned absolutely @ bottom -->
-  <FooterSection/>
+  <FooterSection />
 </template>
 
 <style scoped></style>

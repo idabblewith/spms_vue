@@ -1,33 +1,31 @@
 <script setup lang="ts">
-import NavigationBar from '@/components/subcomponents/NavigationBar.vue';
-import { OhVueIcon, arrowRight } from 'oh-vue-icons';
+import NavigationBar from '@/components/Base/Page/NavigationBar.vue';
+import { OhVueIcon } from 'oh-vue-icons';
 
 const components = {
-  'v-icon': OhVueIcon,
+    'v-icon': OhVueIcon,
 };
 
-const arrowRightIcon = arrowRight;
+// const arrowRightIcon = arrowRight;
 
 </script>
 
 <template>
-    <NavigationBar
-    :navigationBarProps="{
+    <NavigationBar :navigationBarProps="{
         subDirOne: {
-        title: 'Projects',
-        link: '/projects',
+            title: 'Projects',
+            link: '/projects',
         },
         subDirTwo: {
-        title: 'Browse',
-        link: '/projects/browse',
+            title: 'Browse',
+            link: '/projects/browse',
         },
-    }"
-    />
-    <div>  
+    }" />
+    <div>
         <h1>Getting Started with Vue.js and Font Awesome</h1>
-        <p>Have a phone call: 
+        <p>Have a phone call:
         </p>
-        <v-icon :icon="arrowRightIcon" />
+        <!-- <v-icon :icon="arrowRightIcon" /> -->
 
     </div>
 </template>
